@@ -1,0 +1,337 @@
+%\iffalse         THIS IS A META COMMENT
+% File: czech.mbs
+% Copyright 2006 David Martinek
+% Based on earlier document by Patrick W Daly
+% Faculty of Information Technology
+% Brno University of Technology
+% Brno 612 66
+% Czech Republic
+% E-mail: martinek@fit.vutbr.cz
+%
+% Copyright 1995-1999 Patrick W Daly
+% Max-Planck-Institut f\"ur Aeronomie
+% Max-Planck-Str. 2
+% D-37191 Katlenburg-Lindau
+% Germany
+% E-mail: daly@linmpi.mpg.de
+%
+%
+% This program can be redistributed and/or modified under the terms
+% of the LaTeX Project Public License Distributed from CTAN
+% archives in directory macros/latex/base/lppl.txt; either
+% version 1 of the License, or any later version.
+%
+% It is part of the custom-bib collection,
+%   a contribution to the LaTeX2e system.
+%====================================================================
+%       A Language Definition File:  CZECH
+%     to be included with other master bibliography style files
+%--------------------------------------------------------------------
+%   (See version and date in the \ProvidesFile command below)
+%--------------------------------------------------------------------
+%    This file is self-documenting: simply LaTeX it!
+%====================================================================
+%
+ %-------------------------------------------------------------------
+ % Begin module:
+%\fi
+ % \ProvidesFile{slovak.mbs}[2006/03/31 1.0 (DM)]
+%\iffalse
+%<*a&!a>
+% The following ensures that the driver part is not seen by makebst
+% The driver part must not contain any \end other than \end{document} !
+\ifx\endoptions\undefined\let\tempx=\relax\else
+  \long\def\tempx#1\end#2{}\fi\tempx
+%</a&!a>
+%<*driver>
+   \NeedsTeXFormat{LaTeX2e}%
+   \documentclass[a4paper,10pt,twoside]{article}%
+   \usepackage{doc}%
+   \usepackage[latin2]{inputenc}
+   \raggedbottom
+   \CodelineNumbered
+   \RecordChanges
+ %  Comment out next line to print coding
+   \OnlyDescription
+   \setlength{\oddsidemargin}{0.5\paperwidth}
+   \addtolength{\oddsidemargin}{-0.5\textwidth}
+   \addtolength{\oddsidemargin}{-1in}
+   \setlength{\evensidemargin}{\oddsidemargin}
+
+\begin{document}
+   \DocInput{slovak.mbs}
+\end{document}
+%</driver>
+%                   END OF META COMMENT   \fi
+% \CharacterTable
+%  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
+%   Lower-case    \a\b\c\d\e\f\g\h\i\j\k\l\m\n\o\p\q\r\s\t\u\v\w\x\y\z
+%   Digits        \0\1\2\3\4\5\6\7\8\9
+%   Exclamation   \!     Double quote  \"     Hash (number) \#
+%   Dollar        \$     Percent       \%     Ampersand     \&
+%   Acute accent  \'     Left paren    \(     Right paren   \)
+%   Asterisk      \*     Plus          \+     Comma         \,
+%   Minus         \-     Point         \.     Solidus       \/
+%   Colon         \:     Semicolon     \;     Less than     \<
+%   Equals        \=     Greater than  \>     Question mark \?
+%   Commercial at \@     Left bracket  \[     Backslash     \\
+%   Right bracket \]     Circumflex    \^     Underscore    \_
+%   Grave accent  \`     Left brace    \{     Vertical bar  \|
+%   Right brace   \}     Tilde         \~}
+%
+% \setcounter{StandardModuleDepth}{1}
+% \setcounter{IndexColumns}{2}
+% \setlength{\IndexMin}{10cm}
+%
+% \changes{1.0}{2006 Mar 31}{Initial czech version}
+%
+% \pagestyle{myheadings}
+% \markboth{David Martinek}{Czech Bibliographies}
+%
+% \title{{\bfseries Czech Language Definition File}\\
+%      for master bibliographic style files}
+%
+% \author{David Martinek, Patrick W. Daly}
+%
+% \GetFileInfo{slovak.mbs}
+% \date{This paper describes file \texttt{\filename},\\
+%  version \fileversion{} from \filedate}
+%
+% \maketitle
+%
+% \MakeShortVerb{\|}
+%
+% \parskip=1ex \parindent=0pt
+%
+% \newcommand{\btx}{{\sc Bib}\TeX}
+% \newcommand{\dtx}{\textsf{docstrip}}
+%
+% \section{Introduction}
+% This file is to be used as a language definition file with master
+% bibliographic files. The language it defines is
+% \begin{quote}\bfseries Czech\end{quote}
+%
+% This is not a self-sufficient \texttt{.mbs} file, but rather may
+% be used together with one that contains language support via
+% external definition files.
+%
+% See the documentation for \texttt{makebst} for formatting details.
+%
+% \section{The Menu Information}
+%
+% All the menu information is nested between \dtx{} guard options
+% |%<*options>| \dots\ |%</options>|, and the last command is
+% |\endoptions|. The rest of the file is nested between |%<*!options&!driver>|
+% \dots\ |%</!options&!driver>| in order to exclude it if \dtx{} is used to
+% extract only the menu information or the documentation driver.
+%
+%    \begin{macrocode}
+%<*options>
+\mes{^^JOptions for Czech}
+\wr{\spsp\spsp �e�tina,\pc: �esk� jazyk}
+
+\beginoptiongroup{ZKRATKA PRO `STRANA, STRAN'}{}
+\optdef{*}{}{`Stran(a)'}{(��dn� zkratky)}
+\optdef{a}{pp}{`Stran' zkr�ceno}{jako s. or str.}
+\optdef{x}{ppx}{`Stran' vynech�no}{}
+\getans
+\endoptiongroup
+\beginoptiongroup{ZKRATKA PRO `EDITOR':}{}
+\optdef{*}{}{`Editor(�i)'}{(��dn� zkratky)}
+\optdef{a}{ed}{`Editor' zkr�ceno}{jako ed. nebo edt.}
+\getans
+\endoptiongroup
+\beginoptiongroup{DAL�� ZKRATKY:}{}
+\optdef{*}{}{��dn� zkratky}{pro d�l, vyd�n�, kapitola, atd.}
+\optdef{a}{abr}{Pou��vat zkratky}{t�chto slov}
+\getans
+\endoptiongroup
+\beginoptiongroup{ZKRATKA PRO `VYD�N�'
+ (if abbreviating words)}
+ {\if\ans a*\fi}%
+\optdef{*}{}{`Vyd�n�' zkr�ceno jako `vyd.'}{}
+\optdef{a}{ednx}{`Vyd�n�' zkr�ceno jako `v.'}{}
+\getans
+\beginoptiongroup{M�S�CE S TE�KAMI:}{}
+\optdef{*}{}{M�s�ce s te�kami}{jako Led.}
+\optdef{x}{mth-bare}{M�s�ce bez te�ek}{jako Led B�e}
+\getans
+\endoptiongroup
+\endoptiongroup
+\beginoptiongroup{��SLOV�N� VYD�N�:}{}
+\optdef{*}{xedn}{Jako v BibTeXov� datab�zi}{�et�� mno�stv� pam�ti}
+\optdef{w}{}{Vypisovat vyd�n�}{jako prvn�, druh�, t�et�, atd.}
+\optdef{n}{ord}{��slovan� vyd�n�}{jako 1., 2., 3., atd.}
+\getans
+\endoptiongroup
+\endoptions
+%</options>
+%    \end{macrocode}
+%
+%
+% \section{The Coding}
+%    \begin{macrocode}
+%<*!options&!driver>
+
+ % The language selected here is CZECH
+FUNCTION {bbl.and}
+{ "a"}
+
+FUNCTION {bbl.etal}
+{ "aj." }
+
+FUNCTION {bbl.editors}
+%<!ed>{ "editori" }
+%<ed>{ "edt." }
+
+FUNCTION {bbl.editor}
+%<!ed>{ "editor" }
+%<ed>{ "ed." }
+
+FUNCTION {bbl.edby}
+{ "edit\'{a}cia" }
+
+FUNCTION {bbl.edition}
+%<!abr>{ "vydanie" }
+%<abr&!ednx>{ "v." }
+%<abr&ednx>{ "vyd." }
+
+FUNCTION {bbl.volume}
+%<!abr>{ "ro\v{c}n\'{i}k" }
+%<abr>{ "ro\v{c}." }
+
+FUNCTION {bbl.of}
+{ "" }
+
+FUNCTION {bbl.number}
+%<!abr>{ "\v{c}\'{i}slo" }
+%<abr>{ "\v{c}." }
+
+FUNCTION {bbl.nr}
+{ "\v{c}." }
+
+FUNCTION {bbl.in}
+{ "in" }
+
+FUNCTION {bbl.pages}
+%<!pp&!ppx>{ "str\'{a}n" }
+%<pp>{ "s." }
+%<!pp&ppx>{ "" }
+
+FUNCTION {bbl.page}
+%<!pp&!ppx>{ "strana" }
+%<pp>{ "str." }
+%<!pp&ppx>{ "" }
+
+%<*revdata>
+FUNCTION {bbl.eidpp}
+{ "str\'{a}n" }
+
+%</revdata>
+FUNCTION {bbl.chapter}
+%<!abr>{ "kapitola" }
+%<abr>{ "kap." }
+
+FUNCTION {bbl.techrep}
+%<!abr>{ "Technick\'{a} Spr\'{a}va" }
+%<abr>{ "Tech. Zpr." }
+
+FUNCTION {bbl.mthesis}
+{ "Diplomov\'{a} pr\'{a}ca" }
+
+FUNCTION {bbl.phdthesis}
+{ "Dizerta\v{c}n\'{a} pr\'{a}ca" }
+
+%<*!xedn>
+FUNCTION {bbl.first}
+%<!ord>{ "Prvn\'{e}" }
+%<ord>{ "1." }
+
+FUNCTION {bbl.second}
+%<!ord>{ "Druh\'{e}" }
+%<ord>{ "2." }
+
+FUNCTION {bbl.third}
+%<!ord>{ "Tretie" }
+%<ord>{ "3." }
+
+FUNCTION {bbl.fourth}
+%<!ord>{ "\v{S}tvrt\'{e}" }
+%<ord>{ "4." }
+
+FUNCTION {bbl.fifth}
+%<!ord>{ "Piate" }
+%<ord>{ "5." }
+
+FUNCTION {bbl.st}
+{ "" }
+
+FUNCTION {bbl.nd}
+{ "" }
+
+FUNCTION {bbl.rd}
+{ "" }
+
+FUNCTION {bbl.th}
+{ "" }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+
+%</!xedn>
+%<*!abr>
+MACRO {jan} {"Janu\'{a}r"}
+
+MACRO {feb} {"Febru\'{a}r"}
+
+MACRO {mar} {"Marec"}
+
+MACRO {apr} {"Apr\'{i}l"}
+
+MACRO {may} {"M\'{a}j"}
+
+MACRO {jun} {"J\'{u}n"}
+
+MACRO {jul} {"J\'{u}l"}
+
+MACRO {aug} {"August"}
+
+MACRO {sep} {"September"}
+
+MACRO {oct} {"Okt\'{o}ber"}
+
+MACRO {nov} {"November"}
+
+MACRO {dec} {"December"}
+
+%</!abr>
+%<*abr>
+MACRO {jan} {"Jan."}
+
+MACRO {feb} {"Feb."}
+
+MACRO {mar} {"Mar."}
+
+MACRO {apr} {"Apr."}
+
+MACRO {may} {"M\'{a}j"}
+
+MACRO {jun} {"J\'{u}n"}
+
+MACRO {jul} {"J\'{u}l"}
+
+MACRO {aug} {"Aug."}
+
+MACRO {sep} {"Sep."}
+
+MACRO {oct} {"Okt."}
+
+MACRO {nov} {"Nov."}
+
+MACRO {dec} {"Dec."}
+
+%</abr>
+%</!options&!driver>
+ % End module: slovak.mbs
+%    \end{macrocode}
+% \Finale
