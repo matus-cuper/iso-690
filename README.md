@@ -5,11 +5,11 @@ BibTeXový štýl prebratý z http://www.fit.vutbr.cz/~martinek/latex/czechiso.h
 Je potrebné stiahnuť repozitár a odkázať sa na súbor slovakiso.bst pri použití príkazu `\bibliographystyle`
 ```
 cd $MY_LATEX_PROJECT
-git clone git@github.com:matus-cuper/slovakiso.git
+git clone git@github.com:matus-cuper/iso-690.git
 ```
 a pridať do súboru `.tex` bibliografický štýl
 ```
-\bibliographystyle{slovakiso/slovakiso}
+\bibliographystyle{iso-690/slovakiso}
 \bibliography{bibliography}
 ```
 
