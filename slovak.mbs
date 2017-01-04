@@ -244,7 +244,7 @@ FUNCTION {bbl.phdthesis}
 
 %<*!xedn>
 FUNCTION {bbl.first}
-%<!ord>{ "Prvn\'{e}" }
+%<!ord>{ "Prv\'{e}" }
 %<ord>{ "1." }
 
 FUNCTION {bbl.second}

@@ -277,7 +277,7 @@ FUNCTION {bbl.phdthesis}
 { "Dizerta\v{c}n\'{a} pr\'{a}ca" }
 
 FUNCTION {bbl.first}
-{ "Prvn\'{e}" }
+{ "Prv\'{e}" }
 
 FUNCTION {bbl.second}
 { "Druh\'{e}" }
